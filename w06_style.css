@@ -12,4 +12,10 @@ body
   border: 1px solid green;
 }
 
+p
+{
+  font size: 24px;
+  font-weight: bold;
+  font-family: "Times";
+}
 
