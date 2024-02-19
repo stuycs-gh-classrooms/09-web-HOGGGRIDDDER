@@ -2,8 +2,6 @@ body
 {
   background-color: rgb(229 255 204 / 50%);
   border: 1px solid grey;
-  width: 75%px;
-  height: 200px;
 }
 
 h1,
@@ -11,4 +9,26 @@ h2,
 h3
 {
   border: 1px solid grey;
+}
+
+nav {
+  border-bottom: 1px solid black;
+}
+
+.contents ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content {
+  display: inline-block;
+}
+
+.content a::after {
+  display: inline-block;
+  color: #000;
+  content: '>';
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
 }
