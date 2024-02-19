@@ -4,3 +4,9 @@ text-align: center;
   background-color: rgb(229 255 204 / 50%);
   border: 1px solid grey;
 }
+
+p
+{
+  text-align: start;
+  border: 1px solid grey;
+}
