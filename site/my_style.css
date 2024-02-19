@@ -3,13 +3,6 @@ body
   background-color: rgb(229 255 204 / 50%);
 }
 
-h1,
-h2,
-h3
-{
-  border: 1px solid grey;
-}
-
 nav {
   border-bottom: 1px solid black;
 }
@@ -27,7 +20,7 @@ nav {
   display: inline-block;
   color: #000;
   content: '>';
-  font-size: 80%;
+  font-size: 200%;
   font-weight: bold;
-  padding: 0 3px;
+  padding: 0 5px;
 }
