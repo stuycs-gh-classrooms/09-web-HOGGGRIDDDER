@@ -23,7 +23,7 @@ nav {
   display: inline-block;
 }
 
-.content a::after {
+.content{
   display: inline-block;
   color: #000;
   content: ',';
