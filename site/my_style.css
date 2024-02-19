@@ -1,10 +1,12 @@
 body
 {
   background-color: rgb(229 255 204 / 50%);
-  text-align: center;
+}
+
+p {
+  color: red;
+  width: 500px;
   border: 1px solid black;
-  white-space: normal;
-  width: auto;
 }
 
 nav {
