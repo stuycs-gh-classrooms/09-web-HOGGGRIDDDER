@@ -23,6 +23,7 @@ nav {
 }
 
 .era {
+  background color: rgb(204 229 255 / 50%);
   display: inline-block;
   color: #000;
   font-size: 150%;
