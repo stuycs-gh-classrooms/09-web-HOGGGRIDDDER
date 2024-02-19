@@ -3,13 +3,8 @@ body
   background-color: rgb(229 255 204 / 50%);
   text-align: center;
   border: 1px solid black;
-  width: 75%;
-}
-
-ul,
-ol
-{
-  text-align: center;
+  white-space: normal;
+  width: auto;
 }
 
 nav {
