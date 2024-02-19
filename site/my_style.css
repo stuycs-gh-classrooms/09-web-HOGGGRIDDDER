@@ -1,6 +1,13 @@
 body
 {
   background-color: rgb(229 255 204 / 50%);
+  text-align: center;
+}
+
+ul,
+ol
+{
+  text-align: center;
 }
 
 nav {
