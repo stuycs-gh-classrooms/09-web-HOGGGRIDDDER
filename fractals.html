@@ -24,7 +24,42 @@
     <li>Each line's size is increased by 25%</li>
   </ul>
 </p>
-<p> Modified Image:
+<pre><code>
+  def koch_curve(t, depth, size):
+    if (depth == 1):
+        randomColor = random.randrange(1,8)
+        if (randomColor == 1):
+            t.pencolor('red')
+        if (randomColor == 2):
+            t.pencolor('orange')
+        if (randomColor == 3):
+            t.pencolor('yellow')
+        if (randomColor == 4):
+            t.pencolor('green')
+        if (randomColor == 5):
+            t.pencolor('blue')
+        if (randomColor == 6):
+            t.pencolor('indigo')
+        if (randomColor == 7):
+            t.pencolor('purple')
+        t.fd(size)
+        t.pencolor('black')
+        t.fd(size)
+    else:
+        koch_curve(t, depth-1, size * 1.25)
+        t.lt(60)
+        koch_curve(t, depth-1, size * 1.25)
+        t.rt(120)
+        koch_curve(t, depth-1, size * 1.25)
+        t.lt(60)
+        koch_curve(t, depth-1, size * 1.25)
+
+tim = turtle.Turtle()
+tim.pu()
+tim.goto(-295, 0)
+tim.pd()
+</code></pre>
+<p> Modified Image: koch_curve(tim,4,10)
 </p>
 <img id="kochCurve" src="kochCurveModifications.png">
 
@@ -41,7 +76,42 @@
     <li>The sierpinski (depth = 2) triangle will have no 3rd side</li>
   </ul>
 </p>
-<p> Modified Image:
+<pre><code>
+  def triangle(t, size):
+      t.lt(60)
+      t.fd(size)
+      t.rt(120)
+      t.fd(size)
+      t.rt(120)
+      t.fd(size)
+      t.rt(180)
+
+  def sierpinski(t, depth, size, scale_factor=1):
+      if depth == 1:
+          triangle(t, size/2)
+      else:
+          t.pencolor('red')
+          sierpinski(t, depth-1, size/2)
+          t.fd(size/2)
+          t.pencolor('blue')
+          sierpinski(t, depth-1, size/2)
+          t.pencolor('red')
+          t.bk(size/2)
+          t.lt(60)
+          t.fd(size/2)
+          t.rt(60)
+          sierpinski(t, depth-1, size/2)
+          t.rt(120)
+          t.fd(size/2)
+          t.lt(120)
+
+michelangelo = turtle.Turtle()
+michelangelo.pu()
+michelangelo.speed(0)
+michelangelo.goto(-295, 0)
+michelangelo.pd()
+</code></pre>
+<p> Modified Image: sierpinski(michelangelo, 5, 200)
 </p>
 <img id="sierpinskiTriangle" src="sierpinskiTriangleModifications.png">
 
@@ -60,7 +130,77 @@
     <li>The size is increased by 20%</li>
   </ul>
 </p>
-<p> Modified Image:
+<pre><code>
+  def tree(t, depth, size, angle, width):
+      t.width(width)
+      if depth == 0:
+          t.pencolor('black')
+          t.fd(size/2)
+          t.bk(size/2)
+          t.pu()
+          t.fd(size)
+          t.pd()
+          t.width(width * 2)
+          randomColor = random.randrange(1,8)
+          if (randomColor == 1):
+              t.pencolor('red')
+          if (randomColor == 2):
+              t.pencolor('orange')
+          if (randomColor == 3):
+              t.pencolor('yellow')
+          if (randomColor == 4):
+              t.pencolor('green')
+          if (randomColor == 5):
+              t.pencolor('blue')
+          if (randomColor == 6):
+              t.pencolor('indigo')
+          if (randomColor == 7):
+              t.pencolor('purple')
+          t.pu()
+          t.fd(size)
+          t.pd()
+          t.fd(size/2)
+          t.bk(size/2)
+          t.pu()
+          t.bk(size)
+          randomColor = random.randrange(1,8)
+          if (randomColor == 1):
+              t.pencolor('red')
+          if (randomColor == 2):
+              t.pencolor('orange')
+          if (randomColor == 3):
+              t.pencolor('yellow')
+          if (randomColor == 4):
+              t.pencolor('green')
+          if (randomColor == 5):
+              t.pencolor('blue')
+          if (randomColor == 6):
+              t.pencolor('indigo')
+          if (randomColor == 7):
+              t.pencolor('purple')
+          t.pd()
+          t.fd(size/2)
+          t.bk(size/2)
+          t.pu()
+          t.width(width)
+          t.bk(size)
+          t.pd()
+      else:
+          t.pencolor("grey")
+          t.fd(size)
+          t.rt(angle)
+          tree(t, depth-1, size * 1.2, angle, width-1)
+          t.lt(2 * angle)
+          tree(t, depth-1, size * 1.2, angle, width-1)
+          t.rt(angle)
+          t.pencolor('grey')
+          t.bk(size)
+
+leonardo = turtle.Turtle()
+leonardo.lt(90)
+leonardo.pd()
+</code></pre>
+<p> Modified Image: tree(leonardo, 4, 50, 20, 11)
 </p>
 <img id="tree" src="treeModifications.png">
 
