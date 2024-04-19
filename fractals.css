@@ -5,7 +5,7 @@ html {
 body {
   width: 1200px;
   margin: 0 auto;
-  background-color: rgb(229 255 204);
+  background-color: white;
   padding: 0 20px 20px 20px;
   border: thick double #32a1ce;
 }
