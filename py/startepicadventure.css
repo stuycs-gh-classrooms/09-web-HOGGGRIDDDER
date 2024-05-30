@@ -1,13 +1,12 @@
 html {
-  background-color: #99FF99;
+  background-image: url("epicstartimage.png");
 }
 
 body {
   width: 600px;
   margin: 0 auto;
-  background-color: rgb(229 255 204);
+  background-color: white;
   padding: 0 20px 20px 20px;
-  border: 4mm ridge rgb(211, 220, 50, .6);
 }
 
 
