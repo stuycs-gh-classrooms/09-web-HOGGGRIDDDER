@@ -6,14 +6,13 @@ cgitb.enable() #These 2 lines will allow error messages to appear on a web page 
 
 import cgi
 
-
 HTML_HEADER = """
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 <meta charset="utf-8">
-<title>The Beginning...</title>
+<title>Hello</title>
 </head>
 """
 
@@ -23,6 +22,18 @@ HTML_FOOTER = """
 """
 
 
-from random import random
+data = cgi.FieldStorage()
+name = 'batman'
+if ('name' in data):
+    name = data['name'].value
+bgcolor = 'DarkSeaGreen'
+if ('bgcolor' in data):
+    bgcolor = data['bgcolor'].value
 
-print ("your lucky number is:" + str(random()))
+html= HTML_HEADER
+html+= '<body style="background-color: '
+html+= bgcolor + ';">'
+html+= '<h1>Hello ' + name + '</h1>'
+html+= '<br><a href="hello.html">Try Again</a>'
+html+= HTML_FOOTER
+print(html) lucky number is:" + str(random()))
