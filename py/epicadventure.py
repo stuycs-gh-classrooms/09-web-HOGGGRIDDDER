@@ -36,4 +36,4 @@ html+= bgcolor + ';">'
 html+= '<h1>Hello ' + name + '</h1>'
 html+= '<br><a href="hello.html">Try Again</a>'
 html+= HTML_FOOTER
-print(html) lucky number is:" + str(random()))
+print(html)
