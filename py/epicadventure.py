@@ -21,10 +21,19 @@ HTML_FOOTER = """
 </html>
 """
 
-html= HTML_HEADER
-html+= '<body style="background-color: '
-html+= bgcolor + ';">'
-html+= '<h1>Hello ' + name + '</h1>'
-html+= '<br><a href="epicadventure.html">Go back</a>'
-html+= HTML_FOOTER
+
+data = cgi.FieldStorage()
+name = 'batman'
+if ('name' in data):
+    name = data['name'].value
+bgcolor = 'DarkSeaGreen'
+if ('bgcolor' in data):
+    bgcolor = data['bgcolor'].value
+
+html += "oasisno1.html"
+#html+= '<body style="background-color: '
+#html+= bgcolor + ';">'
+#html+= '<h1>Hello ' + name + '</h1>'
+#html+= '<br><a href="epicadventure.html">Go back</a>'
+#html+= HTML_FOOTER
 print(html)
