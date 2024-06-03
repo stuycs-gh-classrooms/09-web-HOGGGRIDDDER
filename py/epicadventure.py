@@ -30,12 +30,12 @@ bgcolor = 'DarkSeaGreen'
 if ('bgcolor' in data):
     bgcolor = data['bgcolor'].value
 
-html+= "oasisino1.html"
-#html+= HTML_HEADER
-#html+= '<body style="background-color: '
-#html+= bgcolor + ';">'
-#html+= '<h1>Hello ' + name + '</h1>'
-#html+= '<br><a href="epicadventure.html">Go back</a>'
-#html+= HTML_FOOTER
+
+html+= HTML_HEADER
+html+= '<body style="background-color: '
+html+= bgcolor + ';">'
+html+= '<h1>Hello ' + name + '</h1>'
+html+= '<br><a href="epicadventure.html">Go back</a>'
+html+= HTML_FOOTER
 
 print(html)
