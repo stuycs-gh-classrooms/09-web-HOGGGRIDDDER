@@ -12,7 +12,8 @@ HTML_HEADER = """
 
 <head>
 <meta charset="utf-8">
-<title>Hello</title>
+<link href="startepicadventure.css" rel="stylesheet">
+<title>Oasis No. 1</title>
 </head>
 """
 
