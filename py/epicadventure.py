@@ -27,7 +27,6 @@ HTML_FOOTER = """
 data = cgi.FieldStorage()
 
 html= HTML_HEADER
-html+= '<h1>Hello ' + name + '</h1>'
 html+= '<br><a href="hello.html">Try Again</a>'
 html+= HTML_FOOTER
 print(html)
