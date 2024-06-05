@@ -1,5 +1,5 @@
 #!/usr/bin/python
-p#!/usr/bin/python
+#!/usr/bin/python
 print('Content-type: text/html\n')
 
 import cgitb #
