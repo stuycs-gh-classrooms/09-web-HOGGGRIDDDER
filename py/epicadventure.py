@@ -7,26 +7,25 @@ cgitb.enable() #These 2 lines will allow error messages to appear on a web page 
 
 import cgi
 
-HTML_HEADER = """
-<!DOCTYPE html>
-<html lang="en">
+def make_html(title, body):
+    html = """
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-<meta charset="utf-8">
-<link href="startepicadventure.css" rel="stylesheet">
-<title>Hello</title>
-</head>
-"""
-
-HTML_FOOTER = """
-</body>
-</html>
-"""
-
+    <head>
+    <meta charset="utf-8">
+    """
+    html+= '<title>' + title + '</title></head>'
+    html+= '<body>' + body + '</body>'
+    html+= '</body></html>'
+    return html
 
 data = cgi.FieldStorage()
 
-html= HTML_HEADER
-html+= '<br><a href="epicadventure.html">Try Again</a>'
-html+= HTML_FOOTER
+ready = 'Ready'
+if ("Ready" in data):
+    body += <link href="startepicadventure.css" rel="stylesheet">
+    body += '<br><a href="epicadventure.html">Try Again</a>'
+    html = make_html("Oasis No. 1", body)
+
 print(html)
