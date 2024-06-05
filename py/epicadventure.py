@@ -1,4 +1,5 @@
 #!/usr/bin/python
+p#!/usr/bin/python
 print('Content-type: text/html\n')
 
 import cgitb #
@@ -13,7 +14,7 @@ HTML_HEADER = """
 <head>
 <meta charset="utf-8">
 <link href="startepicadventure.css" rel="stylesheet">
-<title>Oasis No. 1</title>
+<title>Hello</title>
 </head>
 """
 
@@ -31,12 +32,10 @@ bgcolor = 'DarkSeaGreen'
 if ('bgcolor' in data):
     bgcolor = data['bgcolor'].value
 
-
-html+= HTML_HEADER
+html= HTML_HEADER
 html+= '<body style="background-color: '
 html+= bgcolor + ';">'
 html+= '<h1>Hello ' + name + '</h1>'
-html+= '<br><a href="epicadventure.html">Go back</a>'
+html+= '<br><a href="hello.html">Try Again</a>'
 html+= HTML_FOOTER
-
 print(html)
