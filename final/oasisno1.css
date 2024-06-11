@@ -9,6 +9,7 @@ body {
   width: 600px;
   margin: 0 auto;
   background-image: url("epicimages/scrollbackground.png");
+  background-repeat: no-repeat;
   background-clip: border-box;
 }
 
