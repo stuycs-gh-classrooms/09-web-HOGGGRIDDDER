@@ -10,8 +10,6 @@ body {
   margin: 0 auto;
   background-image: url("epicimages/scrollbackground.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 600px;
 }
 
 
