@@ -8,7 +8,7 @@ html {
 body {
   width: 600px;
   margin: 0 auto;
-  background-color: white;
+  background-image: url("epicimages/scrollbackground.png");
   padding: 0 20px 20px 20px;
 }
 
