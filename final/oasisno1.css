@@ -11,6 +11,7 @@ body {
   background-image: url("epicimages/scrollbackground.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   background-clip: border-box;
 }
 
