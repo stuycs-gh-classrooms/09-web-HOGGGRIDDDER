@@ -10,11 +10,7 @@ body {
   margin: 0 auto;
   background-image: url("epicimages/scrollbackground.png");
   background-repeat: no-repeat;
-}
-
-
-nav {
-  border-bottom: 1px solid black;
+  background-size: cover;
 }
 
 h1 {
