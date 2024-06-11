@@ -24,6 +24,9 @@ h1 {
   text-shadow: 1px 1px 1px grey;
 }
 
+h2{
+  color: yellow;
+}
 
 p {
   font-size: 18px;
