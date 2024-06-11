@@ -1,0 +1,18 @@
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+}
+
+
+nav {
+  border-bottom: 1px solid black;
+}
+
+p {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+}
