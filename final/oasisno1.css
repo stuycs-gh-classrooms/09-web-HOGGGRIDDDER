@@ -8,11 +8,7 @@ html {
 body {
   width: 600px;
   margin: 0 auto;
-  background-image: url("epicimages/scrollbackground.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-clip: border-box;
+  background-color: yellow;
 }
 
 h1 {
