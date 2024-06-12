@@ -4,13 +4,9 @@ html {
 
 .image
 {
-  margin: 180px 1000px;
+  margin: 0px 1000px;
 }
 
-#oasisno1
-{
-  float: right;
-}
 
 body {
   width: 600px;
