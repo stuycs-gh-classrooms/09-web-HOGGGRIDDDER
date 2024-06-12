@@ -2,8 +2,14 @@ html {
   background-color: white;
 }
 
-.image{
-  margin: 0px 1000px;
+.image
+{
+  margin: 0px 800px;
+}
+
+#oasisno1
+{
+  float: right;
 }
 
 body {
