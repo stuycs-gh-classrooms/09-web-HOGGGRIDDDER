@@ -4,10 +4,6 @@ html {
 
 .image{
   margin: 180px 50px 20px 400px;
-  background-image: url("epicimages/oasisno1.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 
